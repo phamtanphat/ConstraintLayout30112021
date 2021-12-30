@@ -8,6 +8,8 @@
     tools:context=".MainActivity">
 
     <TextView
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -18,11 +20,12 @@
         android:textColor="#ffff"
         android:background="#f20"
         android:text="A"
-        android:layout_width="100dp"
+        android:layout_width="0dp"
         android:layout_height="60dp"/>
 
     <TextView
         app:layout_constraintStart_toEndOf="@id/textViewA"
+        app:layout_constraintHorizontal_weight="2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toStartOf="@id/textViewC"
@@ -32,10 +35,11 @@
         android:textColor="#ffff"
         android:background="#2196F3"
         android:text="B"
-        android:layout_width="100dp"
+        android:layout_width="0dp"
         android:layout_height="60dp"/>
 
     <TextView
+        app:layout_constraintHorizontal_weight="3"
         app:layout_constraintStart_toEndOf="@id/textViewB"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -46,7 +50,7 @@
         android:textColor="#ffff"
         android:background="#FFC107"
         android:text="C"
-        android:layout_width="100dp"
+        android:layout_width="0dp"
         android:layout_height="60dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
